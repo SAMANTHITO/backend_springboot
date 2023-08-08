@@ -36,7 +36,7 @@ public class EmpleadoControlador {
         return ResponseEntity.ok(empleado);
     }
 
-    /*@PutMapping("/empleado/{id}")
+    @PutMapping("/empleado/{id}")
     public ResponseEntity<Empleado> actualizarEmpleado(@PathVariable Long id,@RequestBody Empleado detallesEmpleado){
         Empleado empleado = repositorio.findById(id)
                 .orElseThrow(()-> new ResourceNotFoundException(("No existe el usuario con el ID: "+id)));
@@ -48,5 +48,5 @@ public class EmpleadoControlador {
         Empleado empleadoActualizado = repositorio.save(empleado);
 
         return ResponseEntity.ok(empleadoActualizado);
-    }*/
+    }
 }
